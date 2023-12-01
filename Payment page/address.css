@@ -1,0 +1,377 @@
+body {
+    font-family: Whitney, Helvetica, Arial, sans-serif !important;
+    color: #424553;
+    line-height: 2.428571;
+    background-color: lightgray;
+    background-image: url('../image/backgroundimg.jpg');
+    backdrop-filter: blur(10px)
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 60px;
+    background-color: rgb(135, 136, 146);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 5px;
+    color: #f7c706;
+  }
+  .modal button{
+    color: #f7c706;
+  }
+div {
+    display: block;
+}
+
+#headerUnderline {
+    width: 100%;
+    border-bottom: 1px solid #F5F5F6;
+    margin-bottom: 30px;
+    background-color: #404240;
+    margin-top: -10px;
+    /* position: sticky;
+    top: 0; */
+}
+
+#header {
+    display: flex;
+    width: 100%;
+    color: rgb(105, 107, 121);
+    font-size: 10px;
+    justify-content: space-around;
+}
+#add{
+    color: white;
+    text-decoration: none;
+}
+.navbarMiddle {
+    letter-spacing: 3px;
+    font-weight: bolder;
+    color: white;
+}
+#payment_btn{
+    color: white;
+    background-color: #f7c706;
+}
+
+.navbarMiddlePayment {
+    color: #f7c706;
+    border-bottom: 2px solid #f7c706;
+}
+
+#paymentNavSecure {
+    display: flex;
+    align-items: center;
+}
+
+#paymentNavSecure img {
+    margin-right: 5px;
+}
+
+
+.cart-page {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* button {
+    width: 100%;
+    margin: 10px auto;
+    padding: 12px;
+    padding-right: 0;
+    border: 1px solid #d4d5d9;
+    color: #94969f;
+    background-color: #f7c706;
+    border-radius: 4px;
+    line-height: 14px;
+    font-weight: 300;
+    font-size: 14px;
+} */
+
+.address {
+    max-width: 80%;
+    margin: auto auto 6%;
+    display: flex;
+    /* top: 0;
+    z-index: inherit; */
+}
+
+.address-left {
+    width: 56%;
+    vertical-align: top;
+    padding-right: 35px;
+   
+     
+}
+
+.address-Container {
+    width: 100%;
+    margin: auto;
+    border: 1px solid #eaeaec;
+    border-radius: 8px;
+
+}
+
+.address-base-container {
+
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    box-shadow: gray;
+}
+
+.address-right {
+    width: 35%;
+    vertical-align: top;
+      padding-left: 75px;
+}
+
+form {
+    padding: 20px 30px 10px 20px;
+    justify-content: center;
+}
+
+input[type="text"],
+input[type="number"],
+button {
+    width: 100%;
+    margin: 10px auto;
+    padding: 12px;
+    padding-right: 0;
+    border: 1px solid #d4d5d9;
+    color: #94969f;
+    border-radius: 4px;
+    line-height: 14px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 12px;
+    color: #282c3f;
+    padding: 16px 1px 0;
+}
+
+
+h5 {
+    color: red;
+}
+
+.price-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+    top: 0;
+    z-index: inherit;
+    border-radius: 8px;
+}
+
+.priceBlock-items {
+    line-height: 15px;
+    color: #535766;
+    font-size: 12px;
+    font-weight: 600;
+}
+.price-detailBody {
+    padding: 20px 20px 5px 20px;
+}
+.button-base-button {
+    width: 100%;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+    background: #f7c706;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.priceBreakUp {
+    font-size: 14px;
+}
+
+.priceDetail-base-row {
+    margin-bottom: 12px;
+    line-height: 16px;
+}
+
+.priceDetail-base-value {
+    float: right;
+}
+
+.priceDetail-base-total .priceDetail-base-icon {
+    height: 10px;
+}
+
+.priceDetail-base-icon {
+    height: 9px;
+}
+
+.priceDetail-Container {
+    display: inline-block;
+}
+
+.css-one {
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 2px;
+    border-width: 0px;
+    background-color: transparent;
+    color: #f7c706;
+    padding: 0px;
+    cursor: pointer;
+}
+
+#addAddressButton{
+    padding: 5px;
+    border-radius: 7px;
+ 
+
+}
+
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: inherit;
+    outline: 0;
+    padding:0;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.css-two {
+    box-sizing: border-box;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: flex;
+}
+
+.priceDetail-base-total {
+    font-weight: 600;
+    font-size: 15px;
+    padding-top: 16px;
+    border-top: 1px solid #eaeaec;
+    color: #3e4152;
+    line-height: 16px;
+}
+
+#convenienceFee {
+    text-decoration: line-through;
+    font-weight: 400;
+}
+
+
+#totaldisc {
+    color: #03a685;
+}
+
+.priceDetail-base-discount {
+    color: #03a685;
+}
+
+.convienceFee {
+    margin-top: 10px;
+}
+
+
+
+
+#footer {
+    border-top: 1px solid #F5F5F6;
+    margin: 0 0 10px 0;
+    padding-left: 100px;
+    padding-bottom: 150px;
+}
+
+#footer #footerContent {
+    display: flex;
+    max-width: 980px;
+    padding-top: 10px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#footer #footerContentImg img {
+    width: 70px;
+    height: 50px;
+}
+
+#footerContent>a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animated-image {
+    width: 100px; 
+    height: 50px;
+    animation: slide-in 1s ease-in-out;
+    border: 1px solid yellow;
+    border-radius: 5px;
+}
+
+.animated-image:hover {
+    transform: scale(1.1); 
+}
+
+.animated-element {
+    width: 150%;
+    height: auto;
+    background-color: #404240;
+    transition: transform 0.3s ease;
+}
+
+
+.animated-left:hover {
+    transform: scale(1.2);
+}
+.animated-element:hover {
+    transform: scale(1.2);
+}
+
+
+.razorpay-backdrop{
+    background: #03a685;
+}
