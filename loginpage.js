@@ -1,4 +1,21 @@
 
+// Import the functions you need from the SDKs you need
+// import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
+// import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, TwitterAuthProvider } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js";
+
+// const firebaseConfig = {
+//     apiKey: "AIzaSyBtmH-AgoimpvhZXvgW36ISKZI8DhVh-BE",
+//     authDomain: "project1-masai.firebaseapp.com",
+//     projectId: "project1-masai",
+//     storageBucket: "project1-masai.appspot.com",
+//     messagingSenderId: "340253418095",
+//     appId: "1:340253418095:web:d9275b67bcd9b3a5f6639a",
+//     measurementId: "G-RG4YFPJRMK"
+// };
+
+
+// // Initialize Firebase
+// const app = initializeApp(firebaseConfig);
 
 
 const signUpButton = document.getElementById("signUp");
