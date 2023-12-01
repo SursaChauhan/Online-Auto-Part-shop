@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./cart.css">
+</head>
+<body>
+    <div id="headerUnderline">
+        <div id="header">
+            <div>
+                <a href="../index.html"><img height="45px"
+                        src="../image/logo.png" alt=""></a>
+            </div>
+            <div>
+                <p> <span class="navbarMiddle"> <a href="../cart/cartPage.html" class="cart-page">CART</a> </span>
+                    ----------- <span class="navbarMiddle navbarMiddlePayment"> ADDRESS</span>
+                    ----------- <span class="navbarMiddle"> PAYMENT </span> </p>
+            </div>
+            <div id="paymentNavSecure">
+                <img height="28px" src="https://constant.myntassets.com/checkout/assets/img/sprite-secure.png"
+                    alt="">
+                <p><span class="navbarMiddle">100 % SECURE</span></p>
+            </div>
+        </div>
+    </div>
+    <div id="all">
+    <div id="cart-container">
+        <div style="background-color: #fff;"><h2 style="display: inline;">Bag </h2><span id="total-items">0</span> <span>items</span> <hr></div>
+        <!-- <h2 style="display: inline;">Bag </h2><span id="total-items">0</span> <span>items</span> <hr> -->
+        <div id="items">
+            
+        </div>
+        <hr>
+        <div id="tp">
+            <h2>
+                ₹ <span id="total-cost">0</span>
+            </h2>
+            <button>Proceed</button>
+        </div>
+    </div>
+    <div id="price">
+        <h2>PRICE DETAILS</h2>
+        <hr>
+        <p>Price <span id="strikeoff">0</span></p>
+        <p>Discount <span id="discount" style="color: green;">0</span></p>
+        <p>Delivery Charges <span id="delivery-charges" style="color: green;">Free</span></p>
+        <hr>
+        <h5>Total Amount <span id="total" style="color: green;">0</span></h5>
+        <hr>
+        <h4 style="color: green;">You will save <span id="price-discount">0</span> on this order</h4>
+    </div>
+</div>
+</body>
+<script src="./cart.js"></script>
+</html>

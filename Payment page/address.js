@@ -7,7 +7,7 @@ var options = {
             "description": "Test Payment",
             "image": "./Images/Black logo - no background.png",
             "handler": function (response){
-                window.location.href = "./THANKYOU/thank.html";
+                window.location.href = "./Checkout/checkout.html";
             }
         };
       

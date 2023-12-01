@@ -44,15 +44,32 @@ div {
     color: rgb(105, 107, 121);
     font-size: 10px;
     justify-content: space-around;
+    align-items: center;
 }
 #add{
     color: white;
     text-decoration: none;
 }
-.navbarMiddle {
-    letter-spacing: 3px;
+.navbarMid{
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+.navbarMiddle{
+    letter-spacing: 2px;
     font-weight: bolder;
-    color: white;
+    font-size: 17px;
+   
+    /* Font name: "Amazon Ember", Arial, sans-serif
+
+Font size: 28px
+
+Font weight: 400
+
+Line height: 36px
+
+Font color: rgb(15, 17, 17) */
 }
 #payment_btn{
     color: white;
@@ -61,7 +78,7 @@ div {
 
 .navbarMiddlePayment {
     color: #f7c706;
-    border-bottom: 2px solid #f7c706;
+
 }
 
 #paymentNavSecure {
@@ -80,20 +97,6 @@ div {
 }
 
 
-
-/* button {
-    width: 100%;
-    margin: 10px auto;
-    padding: 12px;
-    padding-right: 0;
-    border: 1px solid #d4d5d9;
-    color: #94969f;
-    background-color: #f7c706;
-    border-radius: 4px;
-    line-height: 14px;
-    font-weight: 300;
-    font-size: 14px;
-} */
 
 .address {
     max-width: 80%;
