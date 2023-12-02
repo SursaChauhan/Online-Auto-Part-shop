@@ -1,21 +1,25 @@
 
+
+
 // Import the functions you need from the SDKs you need
-// import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
-// import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, TwitterAuthProvider } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider} from "https://www.gstatic.com/firebasejs/10.7.0/firebase-auth.js";
 
-// const firebaseConfig = {
-//     apiKey: "AIzaSyBtmH-AgoimpvhZXvgW36ISKZI8DhVh-BE",
-//     authDomain: "project1-masai.firebaseapp.com",
-//     projectId: "project1-masai",
-//     storageBucket: "project1-masai.appspot.com",
-//     messagingSenderId: "340253418095",
-//     appId: "1:340253418095:web:d9275b67bcd9b3a5f6639a",
-//     measurementId: "G-RG4YFPJRMK"
-// };
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyCxMynw8ZuwWrt4LMfpB_sV8YAp5qv9Uxc",
+  authDomain: "unit5-cw-b30-auto-part-website.firebaseapp.com",
+  projectId: "unit5-cw-b30-auto-part-website",
+  storageBucket: "unit5-cw-b30-auto-part-website.appspot.com",
+  messagingSenderId: "524054928125",
+  appId: "1:524054928125:web:1b57f1e20e3d68cf93bc94"
+};
 
-// // Initialize Firebase
-// const app = initializeApp(firebaseConfig);
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
 
 const signUpButton = document.getElementById("signUp");
@@ -40,7 +44,7 @@ document.getElementById("signUp_action").addEventListener("submit", (e) => {
     let email = document.querySelector("#up_email").value;
     let name = document.querySelector("#up_name").value;
     let password = document.querySelector("#up_pass").value;
-
+    localStorage.setItem("userName", name);
 
 
     const auth = getAuth();
@@ -52,6 +56,7 @@ document.getElementById("signUp_action").addEventListener("submit", (e) => {
             goleft()
 
             showtost("Registration Succesful !!")
+            window.location.href="index.html";
 
             localStorage.setItem("accessToken", user.accessToken);
         })
@@ -81,7 +86,8 @@ document.getElementById("signIn_action").addEventListener("submit", (e) => {
             const user = userCredential.user;
             console.log("login Succesful")
             showtost("login Succesful");
-            window.location.href = "/index.html";
+            window.location.href = "index.html";
+            
             // ...
         })
         .catch((error) => {
