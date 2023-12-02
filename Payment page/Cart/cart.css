@@ -22,21 +22,31 @@ img {
     background-color: #fff;
     padding: 20px;
 }
+.brandcatdiv{
+line-height: 30px;
+}
+.name{
+    padding: 2px;
+border: 1px solid #333;
+border-radius: 6px;
+}
+.name>select{
+    border: none;
+    border-bottom: #333;
+}
 
 button:hover {
     cursor: pointer;
 }
 
 #items > .item, #tp {
-    border: 2px solid #d4d4c2;
+    border-bottom: 1px solid #d4d4c2;
     display: flex;
     width: 90%;
-    border-radius: 10px;
     margin: auto;
     margin-bottom: 10px;
-    background-color: #fff;
-    padding: 15px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05); 
+    padding: 15px;  
+    cursor: pointer;
 }
 
 #items > .item h3 {
@@ -44,14 +54,30 @@ button:hover {
 }
 
 .item > div {
-    margin-left: 10px;
+    margin-left: 20px;
+    width: 70%;
 }
 
 h6, p, span {
     margin: 0;
     padding: 0;
 }
-
+.upperdiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.upperdiv >h4{
+    font-size: 18px;
+    font-weight: 400px; 
+}
+.newprice{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 18px;
+    font-weight: 700px;
+}
 div h6 {
     display: inline;
 }
@@ -60,26 +86,34 @@ h6 + button {
     margin: 10px;
 }
 
-#tp > button {
-    width: 40%;
-    height: 90%;
-    float: right;
+#price > button {
+    width: 100%;
+    margin: auto;
+    padding: 5px;
     background-color: orange; 
     border-color: orange;
-    color: #fff;
+    color: black;
     border-radius: 6px;
+}
+#price  button :hover{
+    cursor: pointer;
+    color: #ccc;
 }
 
 #tp > h2 {
     margin: auto;
-    margin-left: 0;
+    margin-right: 5px;
+}
+#price-cost{
+    display: flex;
+    justify-content: flex-end;
 }
 
 #tp {
     justify-content: space-between;
     height: 50px;
     padding: 5px;
-    border: 1px solid #ccc;
+   border-bottom: none;
     background-color: #fff;
 }
 
@@ -96,30 +130,37 @@ h6 + button {
     float: right;
     font-weight: bold;
 }
-
+.newprice h6{
+    text-decoration: none;
+    
+}
+.newprice>h6:nth-child(1){
+    text-decoration: line-through;
+    text-decoration-color: green;
+}
 h6 {
     font-size: 18px;
     font-weight: 500;
-    color: #333; 
+    color: black; 
 }
 
 .item {
     padding: 10px;
 }
-
-#increase, #decrease {
-    font-size: smaller;
-    background-color: #fff;
-    border-radius: 40%;
-    border: 1px solid #ccc;
+.otherinfo{
+    font-size: 14px;
+    font-weight: 400;
 }
 
+hr{
+    opacity: 0.3;
+}
 #removeBtn {
-    color: #d65b50; 
+    color: green; 
     background-color: transparent;
     font-family: 'Arial', sans-serif;
-    font-size: 16px;
     border: none;
+    font-weight: 600;
 }
 
 #removeBtn:hover {
@@ -128,15 +169,10 @@ h6 {
 
 /* Media Queries */
 
-@media (max-width: 582px) {
-    #price {
-        display: none;
-    }
-    #cart-container {
-        width: 100%;
-    }
+#total-cost{
+    font-size: 18px;
+    font-weight: 600;
 }
-
 
 .shopnow{
     margin-bottom: 0px;
@@ -201,4 +237,55 @@ h6 {
     letter-spacing: 3px;
     font-weight: bolder;
     color: white;
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjust styles for screens with a maximum width of 480 pixels */
+    #header {
+        padding: 10px;
+    }
+
+    #cart-container {
+        padding: 5px;
+    }
+
+    #price {
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 768px) {
+    /* Adjust styles for screens with a maximum width of 768 pixels */
+     #all {
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        margin-right: 5%;
+        width: 100%;
+      }
+     #price{
+          width: 90%;
+         padding: 10px;
+         justify-content: space-around;
+      }
+      #cart-container {
+          width: 90%;
+          margin:0;
+      }
+   
+   
+    #header {
+        flex-direction: column;
+    }
+
+    #paymentNavSecure {
+        margin-top: 10px;
+    }
+
+    #cart-container {
+        padding: 10px;
+    }
+
+    #price {
+        max-width: 100%;
+    }
 }

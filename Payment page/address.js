@@ -1,7 +1,17 @@
+var paymentprice = parseInt(localStorage.getItem('paymentprice'));
+
+var totalmrp =document.getElementById('totalmrp');
+totalmrp.innerText = paymentprice;
+
+var totalamt= document.getElementById('totalamt');
+totalamt.innerText = paymentprice;
+
+var totaldisc =document.getElementById('totaldisc');
+totaldisc.innerText = paymentprice/2;
 
 var options = {
             "key": "rzp_test_xkkA99Z3D9jiWf", // Replace with your Razorpay API key
-            "amount": 7466000, // Replace with your desired amount (in paise)
+            "amount": `${paymentprice}00`, // Replace with your desired amount (in paise)
             "currency": "INR",
             "name": "Auto Parts",
             "description": "Test Payment",
@@ -144,7 +154,7 @@ var options = {
     var modal = document.getElementById("myModal");
     const addressForm =document.getElementById("form");
     modal.style.display = "none";
-form.reset()
+addressForm.reset()
   }
     
     // Check if there's a default address in local storage and fill the form if available

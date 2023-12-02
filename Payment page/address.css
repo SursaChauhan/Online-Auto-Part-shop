@@ -61,15 +61,6 @@ div {
     font-weight: bolder;
     font-size: 17px;
    
-    /* Font name: "Amazon Ember", Arial, sans-serif
-
-Font size: 28px
-
-Font weight: 400
-
-Line height: 36px
-
-Font color: rgb(15, 17, 17) */
 }
 #payment_btn{
     color: white;
@@ -375,6 +366,62 @@ textarea {
 }
 
 
-.razorpay-backdrop{
-    background: #03a685;
+@media screen and (max-width: 768px) {
+    /* Adjust styles for screens with a maximum width of 768 pixels */
+    .address {
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       margin: auto;
+    }
+    .address-right{
+        margin-right: 15%;
+    }
+    .address-left,
+    .address-right {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .address-left{
+        padding-right: 0;
+     
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjust styles for screens with a maximum width of 480 pixels */
+    /* form {
+        max-width: 100%;
+    } */
+    .address {
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       margin: auto;
+    }
+   
+    .address-right{
+        margin-right: 25%;
+    }
+    .price-container{
+        background-color: #94969f;
+    }
+    .address-base-container{
+        background-color: #94969f;  
+    }
+
+.navbarMiddle{
+    display: none;
+}
+
+    .address-left,
+    .address-right {
+        width: 100%;
+        overflow-x: hidden;
+       
+
+    }
+    #footer{
+        padding-bottom: 50px;
+    }
 }
