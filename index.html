@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c3011d6d48.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./navbar.css">
-    <link rel="stylesheet" href="./r_footer/r_footer.css">
+    <link rel="stylesheet" href="./footer.css">
     <link rel="stylesheet" href="./index.css">
     <script src="./car.js"></script>
     <title>Auto Part Company | Home</title>
@@ -659,9 +659,16 @@
         import {navbar} from "./navbar.js"
         let navbars=document.getElementById("navbar_import");
         navbars.innerHTML=navbar();
+
+
+        document.getElementById("search_btn").addEventListener("click",()=>{
+    window.location.href="https://www.google.com/"
+        })
     </script>
+
+
     <script type="module">
-        import {footer} from "./r_footer/r_footer.js"
+        import {footer} from "./footer.js"
         let footers=document.getElementById("footer_import");
         footers.innerHTML=footer();
     </script>
@@ -689,7 +696,7 @@ function handleLogout() {
 }
 
 function showAdminUI(username) {
-    document.getElementById("username_text").innerText = Welcome, ${username} (Admin);
+    document.getElementById("username_text").innerText = `Welcome, ${username} (Admin)`;
     document.getElementById("login_text").style.display = "none";
     document.getElementById("username_text").style.display = "inline";
     document.getElementById("logout_text").style.display = "inline";
