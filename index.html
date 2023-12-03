@@ -98,13 +98,13 @@
                 </div>
                 <p>Body Parts</p>
             </div>
-            <div>
+            <!-- <div>
                 <div>
                     <img src="./image/repair.jpg"
                         alt="Repair Parts">
                 </div>
                 <p>Repair Parts</p>
-            </div>
+            </div> -->
             <div>
                 <div>
                     <img src="https://www.nicepng.com/png/detail/386-3860458_pioneer-car-audio-png.png"
@@ -695,6 +695,10 @@ function handleLogout() {
     showLoginUI();
 }
 
+//addedlater
+let userName=localStorage.getItem("userName");
+
+
 function showAdminUI(username) {
     document.getElementById("username_text").innerText = `Welcome, ${username} (Admin)`;
     document.getElementById("login_text").style.display = "none";
@@ -711,16 +715,22 @@ function showLoginUI() {
 
 // Check if the user is already logged in (you can use any criteria here)
 if (loggedIn) {
-    const username = "AdminUser"; // Replace with the actual username
+    // const username = "AdminUser"; // Replace with the actual username
+    const username=userName;
     showAdminUI(username);
 } else {
     showLoginUI();
 }
 
 // Login event (simulated login)
+//added later
+// let userName=localStorage.getItem("userName");
+
+
 document.getElementById("login_text").addEventListener("click", function (e) {
     e.preventDefault();
-    const username = "AdminUser"; 
+    // const username = "AdminUser"; 
+    const username=userName;
     loggedIn = true;
     showAdminUI(username);
 });
