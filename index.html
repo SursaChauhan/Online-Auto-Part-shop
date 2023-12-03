@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c3011d6d48.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./car.js"></script>
+    <title>Auto Part Company | Home</title>
+</head>
+
+<body>
+    <div id="navbar_import"></div>
+    
+    <div id="poster">
+        <div>
+            <div>
+                <p>SELECT YOUR <span class="txt_W">VEHICLE</span></p>
+                <p>Customize, Modify, Upgrade, <span class="txt_W">Repair, Replace</span></p>
+            </div>
+            <div>
+                <select id="year">
+                    <option>1 Year</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                </select>
+
+                <select id="make">
+                    <option>2 Make</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                </select>
+
+                <select id="model">
+                    <option>3 Model</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                </select>
+                <button>Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Poster End -->
+
+    <!-- categories start  -->
+
+    <div id="categories_container">
+        <div>
+            <div></div>
+            <div>
+                <h2>BROWSE BY CATEGORIES</h2>
+            </div>
+
+            <div>
+                <button onclick="leftScrollCat()"><i class="arrow left1"></i></button>
+                <button onclick="rightScrollCat()"><i class="arrow right1"></i></button>
+            </div>
+        </div>
+
+        <div id="categories_boxes">
+            <div>
+                <div>
+                    <img src="https://cutewallpaper.org/24/sports-car-png/mclarenautomotive-orange-sports-car-convertible-hd-png-download--kindpng.png"
+                         id="img_1" alt="Exterior">
+                </div>
+                <a href="./productpage/product.html" style="text-decoration: none;"><p>Exterior</p></a>
+            </div>
+            <div>
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFudT-QBRe2dzNJfOt-Mfq6fhYoeNx0FRxUQ&usqp=CAU"
+                        alt="Interior">
+                </div>
+                <a href="./productpage/product.html" style="text-decoration: none;"><p>Interior</p></a>
+            </div>
+            <div>
+                <div>
+                    <img src="https://servicarlevy.es/images/escape.png" alt="Performance">
+                </div>
+                <a href="./productpage/product.html" style="text-decoration: none;"><p>Performance</p></a>
+            </div>
+            <div>
+                <div>
+                    <img src="https://www.pngall.com/wp-content/uploads/8/Wheel-Tire-PNG-Free-Download.png"
+                        alt="Wheels & Tires">
+                </div>
+                <p>Wheels & Tires</p>
+            </div>
+            <div>
+                <div>
+                    <img src="https://static.wixstatic.com/media/a7a0c3_240813ac6f8a431d8d6fa3e96dcc4c78~mv2.jpg/v1/fill/w_426,h_414,al_c,lg_1,q_80,enc_auto/top-category-auto-body-parts-and-mirrors.jpg"
+                        alt="Body Parts">
+                </div>
+                <p>Body Parts</p>
+            </div>
+            <!-- <div>
+                <div>
+                    <img src="./image/repair.jpg"
+                        alt="Repair Parts">
+                </div>
+                <p>Repair Parts</p>
+            </div> -->
+            <div>
+                <div>
+                    <img src="https://www.nicepng.com/png/detail/386-3860458_pioneer-car-audio-png.png"
+                        alt="Electronics">
+                </div>
+                <p>Electronics</p>
+            </div>
+            <div>
+                <div>
+                    <img src="https://img.favpng.com/10/4/13/car-automobile-repair-shop-motor-vehicle-service-auto-mechanic-maintenance-png-favpng-esbzgyPpPu6QtkpkYaQMcRePW.jpg"
+                        alt="Tools & Garage">
+                </div>
+                <p>Tools & Garage</p>
+            </div>
+            <div>
+                <div>
+                    <img src="https://www.pngall.com/wp-content/uploads/8/Wheel-Tire-PNG-Free-Download.png"
+                        alt="Wheels & Tires">
+                </div>
+                <p>Wheels & Tires</p>
+            </div>
+            <div>
+                <div>
+                    <img src="https://static.wixstatic.com/media/a7a0c3_240813ac6f8a431d8d6fa3e96dcc4c78~mv2.jpg/v1/fill/w_426,h_414,al_c,lg_1,q_80,enc_auto/top-category-auto-body-parts-and-mirrors.jpg"
+                        alt="Body Parts">
+                </div>
+                <p>Body Parts</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- categories end  -->
+
+    <!-- Featured products start -->
+
+    <div id="featured_container">
+        <h2>FEATURED PRODUCTS</h2>
+        <button class="left" onclick="leftScroll()"><i class="arrow left1"></i></button>
+        <div id="featured_boxes">
+            <div>
+                <p>AIR LIFT 57268 LOADLIFTER 5000; LEAF SPRING LEVELING KIT</p>
+                <a href="#">Learn More ></a>
+                <div>
+                    <img src="https://i.postimg.cc/MprQrBd0/My-project.png" alt="Air">
+                </div>
+            </div>
+            <div>
+                <p>BANKS POWER RAM-AIR COLD-AIR INTAKE SYSTEM DRY FILTER 11-14 FORD F-150 3.5L ECOBOOST</p>
+                <a href="#">Learn More ></a>
+                <div>
+                    <img src="https://i.postimg.cc/BbHbSY9s/bankpower1.png" alt="bankPower">
+                </div>
+            </div>
+            <div>
+                <p>BANKS POWER RAM-AIR COLD-AIR INTAKE SYSTEM DRY FILTER 11-14 FORD F-150 3.5L ECOBOOST</p>
+                <a href="#">Learn More ></a>
+                <div>
+                    <img src="https://i.postimg.cc/BbHbSY9s/bankpower1.png" alt="bankPower">
+                </div>
+            </div>
+            <div>
+                <p>BANKS POWER RAM-AIR COLD-AIR INTAKE SYSTEM DRY FILTER 11-14 FORD F-150 3.5L ECOBOOST</p>
+                <a href="#">Learn More ></a>
+                <div>
+                    <img src="https://i.postimg.cc/BbHbSY9s/bankpower1.png" alt="bankPower">
+                </div>
+            </div>
+            <div>
+                <p>AIR LIFT 57268 LOADLIFTER 5000; LEAF SPRING LEVELING KIT</p>
+                <a href="#">Learn More ></a>
+                <div>
+                    <img src="https://i.postimg.cc/MprQrBd0/My-project.png" alt="Air">
+                </div>
+            </div>
+        </div>
+        <button class="right" onclick="rightScroll()"><i class="arrow right1"></i></button>
+    </div>
+
+    <!-- Featured products end -->
+
+    <!-- Deal Start -->
+
+    <div id="mainDeal">
+        <h2>DEAL OF THE WEEK</h2>
+
+        <div id="deal_container">
+            <div>
+                <div>
+                    <img src="data:image/jpeg;base64,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"
+                        alt="Mat">
+                </div>
+                <p>Floor - Mats</p>
+                <p>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <span>124</span>
+                </p>
+                <p>$110</p>
+                <button onclick="myFunction()">Add to Cart <span><i class="fa-solid fa-cart-shopping"></i></span></button>
+            </div>
+
+            <div>
+                <div>
+                    <img src="https://servicarlevy.es/images/escape.png" alt="Mat">
+                </div>
+                <p>Exhaust Systems</p>
+                <p>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <span>124</span>
+                </p>
+                <p>$110</p>
+                <button onclick="myFunction()">Add to Cart <span><i class="fa-solid fa-cart-shopping"></i></span></button>
+            </div>
+
+            <div>
+                <div>
+                    <img src="https://www.pngall.com/wp-content/uploads/8/Wheel-Tire-PNG-Free-Download.png" alt="Mat">
+                </div>
+                <p>Wheels and Tires</p>
+                <p>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <span>124</span>
+                </p>
+                <p>$110</p>
+                <button onclick="myFunction()">Add to Cart <span><i class="fa-solid fa-cart-shopping"></i></span></button>
+            </div>
+
+            <div>
+                <div>
+                    <img src="https://i.postimg.cc/kgbhgwbg/p4.png" alt="Brakes & Rotors">
+                </div>
+                <p>Brakes & Rotors</p>
+                <p>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <span>124</span>
+                </p>
+                <p>$110</p>
+                <button onclick="myFunction()">Add to Cart <span><i class="fa-solid fa-cart-shopping"></i></span></button>
+            </div>
+
+            <div>
+                <div>
+                    <img src="https://i.postimg.cc/xCf2mBvR/p5.png" alt="Air Intake system">
+                </div>
+                <p>Air Intake Systems</p>
+                <p>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <span>124</span>
+                </p>
+                <p>$110</p>
+                <button onclick="myFunction()">Add to Cart <span><i class="fa-solid fa-cart-shopping"></i></span></button>
+            </div>
+
+            <div>
+                <div>
+                    <img src="https://i.postimg.cc/tCMWMj7s/p6.png" alt="bed Accessiors ">
+                </div>
+                <p>Bed Accessiors </p>
+                <p>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <span>124</span>
+                </p>
+                <p>$110</p>
+                <button onclick="myFunction()">Add to Cart <span><i class="fa-solid fa-cart-shopping"></i></span></button>
+            </div>
+
+            <div>
+                <div>
+                    <img src="https://i.postimg.cc/sD4DM9Cs/p7.png" alt="Mat">
+                </div>
+                <p>Body Kits</p>
+                <p>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <span>124</span>
+                </p>
+                <p>$110</p>
+                <button onclick="myFunction()">Add to Cart <span><i class="fa-solid fa-cart-shopping"></i></span></button>
+            </div>
+
+            <div>
+                <div>
+                    <img src="https://i.postimg.cc/Wb88XCcK/p8.png" alt="Mat">
+                </div>
+                <p>Custom Grills</p>
+                <p>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <span>124</span>
+                </p>
+                <p>$110</p>
+                <button onclick="myFunction()">Add to Cart <span><i class="fa-solid fa-cart-shopping"></i></span></button>
+            </div>
+
+
+            <div>
+                <div>
+                    <img src="https://i.postimg.cc/gcN4K1W7/p9.png" alt="Mat">
+                </div>
+                <p>Headlights</p>
+                <p>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <span>124</span>
+                </p>
+                <p>$110</p>
+                <button onclick="myFunction()">Add to Cart <span><i class="fa-solid fa-cart-shopping"></i></span></button>
+            </div>
+
+
+            <div>
+                <div>
+                    <img src="https://i.postimg.cc/PxLVcjkK/p10.png" alt="Off Road Bumpers">
+                </div>
+                <p>Off Road Bumpers</p>
+                <p>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <span>124</span>
+                </p>
+                <p>$110</p>
+                <button onclick="myFunction()">Add to Cart <span><i class="fa-solid fa-cart-shopping"></i></span></button>
+            </div>
+
+
+            <div>
+                <div>
+                    <img src="https://www.indiandecars.com/img/sea-1-4.png" alt="Seat Covers">
+                </div>
+                <p>Seat Covers</p>
+                <p>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <span>124</span>
+                </p>
+                <p>$110</p>
+                <button onclick="myFunction()">Add to Cart <span><i class="fa-solid fa-cart-shopping"></i></span></button>
+            </div>
+
+
+            <div>
+                <div>
+                    <img src="https://w7.pngwing.com/pngs/230/253/png-transparent-shock-absorber-suspension-car-exhaust-system-harley-davidson-shock-absorber-exhaust-system-car-motorcycle.png"
+                        alt="Suspension Systems">
+                </div>
+                <p>Suspension Systems</p>
+                <p>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <span>124</span>
+                </p>
+                <p>$110</p>
+                <button onclick="myFunction()">Add to Cart <span><i class="fa-solid fa-cart-shopping"></i></span></button>
+            </div>
+
+
+            <div>
+                <div>
+                    <img src="https://i.postimg.cc/xTH8QJRV/p12.png" alt="Mat">
+                </div>
+                <p>Custom Wheels</p>
+                <p>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <span>124</span>
+                </p>
+                <p>$110</p>
+                <button onclick="myFunction()">Add to Cart <span><i class="fa-solid fa-cart-shopping"></i></span></button>
+            </div>
+
+
+
+            <div>
+                <div>
+                    <img src="https://i.postimg.cc/k4xY9yBt/p13.png" alt="Tail lights">
+                </div>
+                <p>Tail Lights</p>
+                <p>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <span>124</span>
+                </p>
+                <p>$110</p>
+                <button onclick="myFunction()">Add to Cart <span><i class="fa-solid fa-cart-shopping"></i></span></button>
+            </div>
+
+
+            <div>
+                <div>
+                    <img src="https://i.postimg.cc/q7QgFPGt/p15.png" alt="chrome trim">
+                </div>
+                <p>Chrome Trim</p>
+                <p>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <i class="fa-solid fa-star fivestar"></i>
+                    <span>124</span>
+                </p>
+                <p>$110</p>
+                <button onclick="myFunction()">Add to Cart <span><i
+                            class="fa-solid fa-cart-shopping"></i></span></button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Deal End -->
+
+    <!-- Our bLog Start -->
+
+    <div id="blog_Container">
+        <div id="yel"></div>
+        <div>
+            <h2>OUR BLOG</h2>
+            <button class="left" onclick="leftScrollBlog()"><i class="arrow left1"></i></button>
+            <div id="blog_box">
+                <div>
+                    <div>
+                        <img src="https://i.postimg.cc/jdYdYb5W/b1.jpg" alt="car">
+                    </div>
+                    <div>
+                        <div>
+                            <p>Exterior</p>
+                            <p>14 Dec</p>
+                        </div>
+                        <h4>Top Ford Ranger Products For Fail</h4>
+                        <a href="#">Learn More ></a>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://i.postimg.cc/bw53J85P/b2.jpg" alt="tires">
+                    </div>
+                    <div>
+                        <div>
+                            <p>Wheels and Tires</p>
+                            <p>14 Dec</p>
+                        </div>
+                        <h4>Headlight options for 2018 - 2020 F150s</h4>
+                        <a href="#">Learn More ></a>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://i.postimg.cc/SQ55ZBqJ/b3.jpg" alt="car">
+                    </div>
+                    <div>
+                        <div>
+                            <p>Exterior</p>
+                            <p>14 Dec</p>
+                        </div>
+                        <h4>Top Ford Ranger Products For Fail</h4>
+                        <a href="#">Learn More ></a>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://i.postimg.cc/jdYdYb5W/b1.jpg" alt="car">
+                    </div>
+                    <div>
+                        <div>
+                            <p>Exterior</p>
+                            <p>14 Dec</p>
+                        </div>
+                        <h4>Top Ford Ranger Products For Fail</h4>
+                        <a href="#">Learn More ></a>
+                    </div>
+                </div>
+                
+            </div>
+            <button class="right" onclick="rightScrollBlog()"><i class="arrow right1"></i></button>
+        </div>
+    </div>
+
+    <!-- Our bLog End -->
+
+    <!-- Our Offers Start -->
+
+    <div id="offers_container">
+        <h2>OUR OFFERS</h2>
+        <button class="left" onclick="leftScrollOffer()"><i class="arrow left1"></i></button>
+        <div id="offers_boxes">
+            <div>
+                <div class="pos" id="p1">
+                    <div>
+                        <p>LIMITED OFFERS </p>
+                        <p>REPAIR PARTS</p>
+                    </div>
+                    <a href="#">Learn More ></a>
+                </div>
+            </div>
+            <div>
+                <div class="pos" id="p2">
+                    <div>
+                        <p>BODY PARTS</p>
+                        <p>BEST OFFERS</p>
+                    </div>
+                    <a href="#">Learn More ></a>
+                </div>
+            </div>
+            <div>
+                <div class="pos" id="p1">
+                    <div>
+                        <p>LIMITED OFFERS </p>
+                        <p>REPAIR PARTS</p>
+                    </div>
+                    <a href="#">Learn More ></a>
+                </div>
+            </div>
+            <div>
+                <div class="pos" id="p2">
+                    <div>
+                        <p>BODY PARTS</p>
+                        <p>BEST OFFERS</p>
+                    </div>
+                    <a href="#">Learn More ></a>
+                </div>
+            </div>
+
+        </div>
+        <button class="right" onclick="rightScrollOffer()"><i class="arrow right1"></i></button>
+    </div>
+
+    <!-- Our Offers End -->
+
+
+    <!-- Makes Models Start -->
+
+    <div id="mm_container">
+        <div>
+            <a href="#">FEATURED MAKES</a>
+            <a href="#">FEATURED MODELS</a>
+        </div>
+        <div>
+            <div>
+                <p>Kai</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Honda</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Subaru</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Chevy</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Ford</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Nissan</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Dodge</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Ram</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Toyoto</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Jeep</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>GMC</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Hyundai</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Cadillc</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Mercedes</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+            <div>
+                <p>Lexus</p>
+                <p><i class="fa-solid fa-chevron-right"></i></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer_import"></div>
+</body>
+
+    <script type="module">
+        import {navbar} from "./navbar.js"
+        let navbars=document.getElementById("navbar_import");
+        navbars.innerHTML=navbar();
+
+
+        document.getElementById("search_btn").addEventListener("click",()=>{
+    window.location.href="https://www.google.com/"
+        })
+    </script>
+
+
+    <script type="module">
+        import {footer} from "./footer.js"
+        let footers=document.getElementById("footer_import");
+        footers.innerHTML=footer();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hamburger").click(function () {
+                $(".slide-menu").animate({ left: "0" });
+            });
+
+            $(".slide-menu").click(function () {
+                $(".slide-menu").animate({ left: "-250px" });
+            });
+        });
+    </script>
+    <script>
+let loggedIn = false;
+
+function handleLogout() {
+    loggedIn = false;
+    showLoginUI();
+}
+
+//addedlater
+let userName=localStorage.getItem("userName");
+
+
+function showAdminUI(username) {
+    document.getElementById("username_text").innerText = `Welcome, ${username} (Admin)`;
+    document.getElementById("login_text").style.display = "none";
+    document.getElementById("username_text").style.display = "inline";
+    document.getElementById("logout_text").style.display = "inline";
+}
+
+function showLoginUI() {
+    document.getElementById("username_text").innerText = "";
+    document.getElementById("login_text").style.display = "inline";
+    document.getElementById("username_text").style.display = "none";
+    document.getElementById("logout_text").style.display = "none";
+}
+
+// Check if the user is already logged in (you can use any criteria here)
+if (loggedIn) {
+    // const username = "AdminUser"; // Replace with the actual username
+    const username=userName;
+    showAdminUI(username);
+} else {
+    showLoginUI();
+}
+
+// Login event (simulated login)
+//added later
+// let userName=localStorage.getItem("userName");
+
+
+document.getElementById("login_text").addEventListener("click", function (e) {
+    e.preventDefault();
+    // const username = "AdminUser"; 
+    const username=userName;
+    loggedIn = true;
+    showAdminUI(username);
+});
+
+
+document.getElementById("logout_text").addEventListener("click", handleLogout);
+let hom_1Img = document.getElementById("img_1")
+hom_1Img.addEventListener("click" , function(){
+    window.location.href = "../productpage/product.html"
+})
+    </script>
+
+</html>
