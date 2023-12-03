@@ -20,7 +20,7 @@ function navbar(){
                 <div>
                 <span id="username_text"></span>
                 <button id="logout_text" style="display: none">Logout</button>
-                <p><a href="./loginPage/index.html" id="login_text">Login</a></p>
+                <p><a href="./loginpage.html" id="login_text">Login</a></p>
                     <p><i class="fa-solid fa-heart"></i></p>
                     <p><a href="../cart/cart.html" style="color: #949494;"><i class="fa-solid fa-cart-shopping"></i></a></p>
                     

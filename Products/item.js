@@ -108,7 +108,7 @@ addToBasket.addEventListener("click", () => {
   Buynow.textContent = "Buy Now";
 
   Buynow.addEventListener("click",()=>{
-    window.location.href=''
+    window.location.href='../Payment page/Cart/cart.html'
     localStorage.setItem('cartitem',JSON.stringify(itemdetails));
   })
     impdetails.appendChild(productName);
