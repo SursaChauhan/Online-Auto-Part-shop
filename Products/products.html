@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -30,4 +30,142 @@
 </body>
 </html>
 
+<script src="./products.js"></script> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <script src="https://kit.fontawesome.com/c3011d6d48.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./products.css">
+    <link rel="stylesheet" href="../r_navbar/r_navbar.css">
+    <link rel="stylesheet" href="../r_footer/r_footer.css">
+</head>
+<body>
+    
+    <div id="navbar_import"></div>
+    <div id="body">
+        <div id="heading_appliedfilters_sort">
+            <div id="heading_container">
+                <h2 id="heading">Auto parts</h2>
+                <!-- <img src="./images/catalog_underline.png" alt="" id="catalog_underline"> -->
+            </div>
+            <div id="applied_filters_sort">
+                
+                <select id="sorting" >
+                    <option value="">Sorting By</option>
+                    <option value="atoz">A - Z</option>
+                    <option value="ztoa">Z - A</option>
+                    <option value="lowtohigh">Price, Low to High</option>
+                    <option value="hightolow">Price, High to Low</option>
+                </select>
+            </div>
+        </div>
+        <div id="content">
+          
+            <div id="productSidebar">
+
+                <div id="resetfilter">
+                    <p id="reset_filters">Reset Filters<svg width="16px" height="16px" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M4 6H20M7 12H17M9 18H15" stroke="#000000" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </g>
+                    </svg></p>
+                </div>
+
+                <div id="filterBrand" class="filter">
+                    <h5>BRAND</h5>
+                    <form action=""  class="form">
+                        <div>
+                            <input class="brands" type="checkbox" value="AirFlow">
+                        <label for="AirFlow">AirFlow</label>
+                        </div>
+                        
+                       <div> <input class="brands" type="checkbox" value="TieMaster">
+                        <label for="TieMaster">TieMaster</label></div>
+
+                        <div> <input class="brands" type="checkbox" value="AutoTech">
+                            <label for="AutoTech">AutoTech</label></div>
+                           
+                    </form>
+                </div>
+                <hr>
+                <div id="filterCategory" class="filter">
+                    <h5>CATEGORY</h5>
+                    <form action="" class="form">
+                        <div><input class="category" type="checkbox" value="Oil Filter">
+                            <label for="Oil Filter">Oil Filter</label></div>
+            
+                     <div>   <input class="category" type="checkbox" value="Steering System">
+                        <label for="Steering System">Steering System</label></div>
+
+                        <div>   <input class="category" type="checkbox" value=" Air Filter">
+                            <label for=" Air Filter"> Air Filter</label></div>
+            
+                      
+                    </form>
+                </div>
+                <hr>
+                <div id="filterPrice" class="filter">
+                    <h5>PRICE</h5>
+                    <div id="price_range_filter_container">
+                        <p>1000</p><input id="price_range_filter" type="range" name="" id="" min="1000" step="200" value="9000" max="9000">
+                        <p>9000</p>
+                    </div>
+                </div>
+            </div>
+            
+              
+            
+            <div id="products">
+                
+                <div id="products_container"></div>
+                <div id="loader"></div>
+            </div>
+        </div>
+
+
+        <div id="popularProducts">
+            <div id="popularProducts_head">
+                <div id="heading">
+                    <h2>Popular Products</h2>
+                </div>
+               
+                <div class="product-carousel" >
+                    <button class="prev-button">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAUVBMVEX///8AAADz8/M+Pj78/PxWVlZcXFw7OztaWlq4uLj19fWampqQkJBRUVEVFRURERFJSUmrq6tBQUHr6+swMDB1dXUKCgrExMQcHByBgYGXl5caQ8DmAAABtklEQVR4nO3dXU7CQBhG4Q4C2iqUf5T9L1QTJaF0rqYx35nmPCt4T5iWq2aaRpIk6R+0m23qd/tl9I6Juk36dThGT5lk8ZLuTl30mAkeOlI6R68pN+hIl0X0nlLDjpTa6EGFnjvSLXpRmVFHeo+eVGTcka7Rm0pkOj5r/E/MdFR5snId6+hRBXIdbxUeLDtY7GCxg8UOFjtYFq92kNjBYgeLHSy5jrUdYexgsYPFDhY7WOxgsYPFDhY7WOxgsYPFDhY7WOxgsYPFDhY7WOxgsYPFDhY7WOxgsYPFDhY7WOxgsYNlmfues8KO5msmHV0/j46mnUlH8zGTjnHIqtKQ8dGqtCTzsFdaknn91lmyPMylJPdJpCWxLOGxhMcSHkt4LOGxhMcSHkt4LOGxhMcSHkt4LOGxhMcSHkt4LOGxhMcSHkt4LOGxhMcSHkt4LOGxhMcSHkt4LOGxhMcSHkt4LOGxhMcSnnmX1HiJdr6kxmvNsyVVXjSfLblGbyozLqnzbGVKbtGLSj2XtNGDig1LLl30nnKDknP0mikeSk4V/yA/utVfx+EYPWWqdrNN/W4fPUOSJAF8A9X9GZY/IiZFAAAAAElFTkSuQmCC" alt="">
+                    </button>
+                    <div class="products-container">
+                      <!-- Product items go here -->
+                    </div>
+                    
+                    <button class="next-button"><img src="https://www.pngitem.com/pimgs/m/366-3667962_right-arrow-gray-slider-arrow-icon-png-transparent.png" alt="right button"></button>
+                  </div>
+
+            </div>
+            
+        </div>
+    </div>
+    <div id="footer_import"></div>
+</body>
+<script type="module">
+    import {navbar} from "../r_navbar/r_navbar.js"
+    let navbars=document.getElementById("navbar_import");
+    navbars.innerHTML=navbar();
+</script>
+<script type="module">
+    import {footer} from "../r_footer/r_footer.js"
+    let footers=document.getElementById("footer_import");
+    footers.innerHTML=footer();
+</script>
+<script src="./product.js"></script>
 <script src="./products.js"></script>
+</html>
