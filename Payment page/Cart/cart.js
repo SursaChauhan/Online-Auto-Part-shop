@@ -28,7 +28,7 @@
  products = JSON.parse(localStorage.getItem('cart-products'))||[];
 async function fetchdata() {
     try {
-        let res = await fetch(`https://mock-api-template-vema.onrender.com/tyres?_page=${1}&limit=5`, {
+        let res = await fetch(`https://cart-one.onrender.com/users?_page=${1}&limit=5`, {
             method: 'GET'
         });
 
@@ -124,7 +124,7 @@ btn.addEventListener('click', async function (event) {
         event.preventDefault();
 
         // Make the DELETE request to remove the item from the server
-        const response = await fetch(`https://mock-api-template-vema.onrender.com/tyres/${products[index].id}`, {
+        const response = await fetch(`https://cart-one.onrender.com/users/${products[index].id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',
@@ -190,7 +190,7 @@ otherinfo.setAttribute("class","otherinfo");
                 };
         
                 // Make the PATCH request to update the quantity on the server
-                const response = await fetch(`https://mock-api-template-vema.onrender.com/tyres/${products[index].id}`, {
+                const response = await fetch(`https://cart-one.onrender.com/users/${products[index].id}`, {
                     method: 'PATCH',
                     headers: {
                         'Content-Type': 'application/json',
