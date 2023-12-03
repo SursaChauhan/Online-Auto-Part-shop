@@ -1,0 +1,101 @@
+*{
+
+    font-family: Arial, Geneva, Helvetica, sans-serif;
+
+}
+
+#container {
+
+    display: flex;
+    margin: auto;
+    width: 90%;
+    justify-content: center;
+    gap: 20px;
+    height: auto;
+    /* border: 1px solid red; */
+
+}
+
+#sort-low-to-high, #sort-high-to-low, #filter-Interios-on-Canvas, #filter-Oil-on-Canvas {
+
+    padding: 10px 50px 10px 50px;
+    margin-bottom: 20px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+#sort-low-to-high:hover, #sort-high-to-low:hover, #filter-Interios-on-Canvas:hover, #filter-Oil-on-Canvas:hover {
+
+    background-color: rgb(165, 165, 241);
+    color: black;
+
+}
+
+#filtering {
+
+    /* border: 1px solid black; */
+    height: auto;
+    text-align: center;
+
+}
+
+#mainSection {
+
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* border: 1px solid black; */
+    height: auto;
+    margin: auto;
+    gap: 30px;
+    justify-content: space-around;
+
+}
+
+.cards {
+
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    /* justify-content: space-between; */
+    gap: 100px 0px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    padding: 20px;
+    cursor: pointer;
+
+}
+
+.cards:hover {
+
+    background: #e1e1e1;
+    border: 3px solid #d0d0d0;
+    box-shadow: 0 0 0 2px #d0d0d0;
+    /* margin: -2px; */
+
+}
+
+.card-image {
+
+    height: 200px;
+    width: 200px;
+
+}
+
+.card-button {
+
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.card-button:hover {
+
+    background-color: black;
+    color: white;
+
+}
