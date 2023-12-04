@@ -45,8 +45,7 @@ function footer(){
   <div id="down">
 
       <div>
-      <h2>AUTO PART</h2>
-      <h3>COMPANY LOGO</h3>
+     <img src="https://i.postimg.cc/6pvdh9G0/logg.png", id="logoimg">
       </div>
 
 
