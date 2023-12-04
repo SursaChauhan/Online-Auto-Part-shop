@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./navbar.css">
     <link rel="stylesheet" href="./footer.css">
     <link rel="stylesheet" href="./index.css">
-    <script src="./car.js"></script>
+    <script src="./index.js"></script>
     <title>Auto Part Company | Home</title>
 </head>
 
@@ -69,20 +69,20 @@
                     <img src="https://cutewallpaper.org/24/sports-car-png/mclarenautomotive-orange-sports-car-convertible-hd-png-download--kindpng.png"
                          id="img_1" alt="Exterior">
                 </div>
-                <a href="./productpage/product.html" style="text-decoration: none;"><p>Exterior</p></a>
+                <a href="../Products/product.html" style="text-decoration: none;"><p>Exterior</p></a>
             </div>
             <div>
                 <div>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFudT-QBRe2dzNJfOt-Mfq6fhYoeNx0FRxUQ&usqp=CAU"
                         alt="Interior">
                 </div>
-                <a href="./productpage/product.html" style="text-decoration: none;"><p>Interior</p></a>
+                <a href="../Products/product.html" style="text-decoration: none;"><p>Interior</p></a>
             </div>
             <div>
                 <div>
                     <img src="https://servicarlevy.es/images/escape.png" alt="Performance">
                 </div>
-                <a href="./productpage/product.html" style="text-decoration: none;"><p>Performance</p></a>
+                <a href="../Products/product.html" style="text-decoration: none;"><p>Performance</p></a>
             </div>
             <div>
                 <div>
@@ -688,6 +688,7 @@
         });
     </script>
     <script>
+        
 let loggedIn = false;
 
 function handleLogout() {
@@ -696,11 +697,19 @@ function handleLogout() {
 }
 
 //addedlater
-let userName=localStorage.getItem("userName");
+let userName=JSON.parse(localStorage.getItem("userName"))||null;
+
+if(userName!==null){
+    showAdminUI(userName);
+}else{
+    showLoginUI();
+}
 
 
+
+//=========================================================================
 function showAdminUI(username) {
-    document.getElementById("username_text").innerText = `Welcome, ${username} (Admin)`;
+    document.getElementById("username_text").innerText = `${username}`;
     document.getElementById("login_text").style.display = "none";
     document.getElementById("username_text").style.display = "inline";
     document.getElementById("logout_text").style.display = "inline";
@@ -712,34 +721,36 @@ function showLoginUI() {
     document.getElementById("username_text").style.display = "none";
     document.getElementById("logout_text").style.display = "none";
 }
-
+//==========================================================================
 // Check if the user is already logged in (you can use any criteria here)
-if (loggedIn) {
-    // const username = "AdminUser"; // Replace with the actual username
-    const username=userName;
-    showAdminUI(username);
-} else {
-    showLoginUI();
-}
+// if (loggedIn) {
+//     // const username = "AdminUser"; // Replace with the actual username
+//     const username=userName;
+//     showAdminUI(username);
+// } else {
+//     showLoginUI();
+// }
 
 // Login event (simulated login)
 //added later
 // let userName=localStorage.getItem("userName");
 
+//previous one
+// document.getElementById("login_text").addEventListener("click", function (e) {
+//     e.preventDefault();
+//     // const username = "AdminUser"; 
+//     const username=userName;
+//     loggedIn = true;
+//     showAdminUI(username);
+// });
 
-document.getElementById("login_text").addEventListener("click", function (e) {
-    e.preventDefault();
-    // const username = "AdminUser"; 
-    const username=userName;
-    loggedIn = true;
-    showAdminUI(username);
-});
 
 
 document.getElementById("logout_text").addEventListener("click", handleLogout);
+
 let hom_1Img = document.getElementById("img_1")
 hom_1Img.addEventListener("click" , function(){
-    window.location.href = "../productpage/product.html"
+    window.location.href = "../Productpage/product.html"
 })
     </script>
 

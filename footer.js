@@ -8,9 +8,7 @@ function footer(){
       <div id="left">
           <div id="aboutus">
               <h4>About Us</h4>
-              <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              At, harum temporibus! Qui, labore libero ipsa quo, atque quas ipsam corporis animi numquam rem quae, 
-              error sed aliquid cupiditate?</P>
+              <P>Auto Parts is a bold, attractive WordPress website template designed specifically for auto parts shops. It can also be used to make websites for auto repair, auto service, auto dealers, car repair, garage, and other services related to automotive or automobiles.</P>
           </div>
 
           <div>

@@ -20,7 +20,7 @@ function navbar(){
                 <div>
                 <span id="username_text"></span>
                 <button id="logout_text" style="display: none">Logout</button>
-                <p><a href="./loginPage/index.html" id="login_text">Login</a></p>
+                <p><a href="./loginpage.html" id="login_text">Login</a></p>
                     <p><i class="fa-solid fa-heart"></i></p>
                     <p><a href="../cart/cart.html" style="color: #949494;"><i class="fa-solid fa-cart-shopping"></i></a></p>
                     
@@ -28,12 +28,12 @@ function navbar(){
             </div>
         </div>
         <div id="nav_child_3">
-            <a href="#">Exterior</a>
-            <a href="#">Interior</a>
-            <a href="#">Performance</a>
-            <a href="#">Wheels and Tires</a>
-            <a href="#">Body Parts</a>
-            <a href="#">Repair Parts</a>
+            <a href="./Products/product.html">Exterior</a>
+            <a href="../Products/product.html">Interior</a>
+            <a href="../Products/product.html">Performance</a>
+            <a href="../Products/product.html">Wheels and Tires</a>
+            <a href="../Products/product.html">Body Parts</a>
+            <a href="../Products/product.html">Repair Parts</a>
             <a href="#">Electronics</a>
             <a href="#">Tools & Garage</a>
         </div>
