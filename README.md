@@ -22,7 +22,7 @@ Avijit:- <br/>
 https://github.com/AvijitSharma123 <br/>
 
 Affan:- <br/>
--- <br/>
+https://www.linkedin.com/in/affan-ansari-702110237/ <br/>
 -- <br/>
 
 # Project Description:-
