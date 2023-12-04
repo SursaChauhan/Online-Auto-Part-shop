@@ -11,7 +11,9 @@ function navbar(){
         <div id="nav_child_2">
             <div>
                 <div>
-                    <img src="https://i.postimg.cc/6pvdh9G0/logg.png" alt="logo">
+                   
+                    <a href="../index.html" id="logotxt"> <img src="https://i.postimg.cc/6pvdh9G0/logg.png" alt="logo"><span id="carttext"></span></a>
+
                 </div>
                 <div>
                     <input type="text" id="search_input" placeholder="Search by Model Year, Products...">
@@ -22,7 +24,7 @@ function navbar(){
                 <button id="logout_text" style="display: none">Logout</button>
                 <p><a href="./loginpage.html" id="login_text">Login</a></p>
                     <p><i class="fa-solid fa-heart"></i></p>
-                    <p><a href="../cart/cart.html" style="color: #949494;"><i class="fa-solid fa-cart-shopping"></i></a></p>
+                    <p id="redirect"><a href="./Payment page/cart.html" style="color: #949494;"><i class="fa-solid fa-cart-shopping"></i></a></p>
                     
                 </div>
             </div>
@@ -32,7 +34,7 @@ function navbar(){
             <a href="#">Interior</a>
             <a href="#">Performance</a>
             <a href="#">Wheels and Tires</a>
-            <a href="#">Body Parts</a>
+            <a href="./products/products.html">Body Parts</a>
             <a href="#">Repair Parts</a>
             <a href="#">Electronics</a>
             <a href="#">Tools & Garage</a>

@@ -7,8 +7,7 @@ body{
       width: 80vw;
       margin: auto;
       font-family: "ClashDisplay Regular", sans-serif;
-    
-    
+  margin-top: 2%;
     }
     
     #content {
@@ -40,7 +39,7 @@ body{
     #heading {
       font-family: "ClashDisplay SemiBold", sans-serif;
       font-size: 32px;
-      color:  rgb(255,156,66);
+      color:  rgb(248,205,47);
       margin: 0;
     }
     

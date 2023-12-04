@@ -5,26 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
     <link rel="stylesheet" href="./cart.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-fz2V5bOMlIvAaWpTJ48I5al6b8CIdgZY3PfFJ3Ylzp3FeVlMRSDzW6gq/2+SiU4Q" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c3011d6d48.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <div id="headerUnderline">
-        <div id="header">
-            <div>
-                <a href="../index.html"><img height="45px"
-                        src="../image/logo.png" alt=""></a>
-            </div>
-            <div>
-                <p> <span class="navbarMiddle"> <a href="../cart/cartPage.html" class="cart-page">CART</a> </span>
-                    ----------- <span class="navbarMiddle navbarMiddlePayment"> ADDRESS</span>
-                    ----------- <span class="navbarMiddle"> PAYMENT </span> </p>
-            </div>
-            <div id="paymentNavSecure">
-                <img height="28px" src="https://constant.myntassets.com/checkout/assets/img/sprite-secure.png"
-                    alt="">
-                <p><span class="navbarMiddle">100 % SECURE</span></p>
-            </div>
-        </div>
-    </div>
+    <div id="navbar_import"></div>
     <div id="all">
     <div id="cart-container">
         <div style="background-color: #fff;"><h2 id="Shopping"></h2> <hr></div>
@@ -54,6 +41,20 @@
         <button id="Proceed">Proceed to Buy</button>
     </div>
 </div>
+
 </body>
+<script type="module">
+    import {navbar} from "../navbar.js"
+    let navbars=document.getElementById("navbar_import");
+    navbars.innerHTML=navbar();
+// document.getElementById('login_text').textContent='Welcome, Surendra'; 
+// let cartnumber = JSON.parse(localStorage.getItem("cartnumber"));
+
+// document.getElementById('carttext').textContent=`${cartnumber}`; 
+
+    document.getElementById("search_btn").addEventListener("click",()=>{
+window.location.href='./Products/products.html';
+    })
+</script>
 <script src="./cart.js"></script>
 </html>

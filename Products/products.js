@@ -155,7 +155,7 @@ let currentSlide = 0; // Current slide index
   const newimg =document.createElement("img");
   newimg.setAttribute("alt", product.name);
   newimg.setAttribute("id","newimg");
-  newimg.src= `../images/basket-cart-icon-27.png`;
+  newimg.src= `../images/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.webp`;
 
   bag.addEventListener("click", () => {
     bagnew()

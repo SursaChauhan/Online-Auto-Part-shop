@@ -1,30 +1,4 @@
-// var products = [
-//     {
-//         id:1,
-//         images : ['https://m.media-amazon.com/images/I/61UzyToy2YL._AC_AA180_.jpg'],
-//         name : 'Spark Plug',
-//         quantity : 1,
-//         price : 459,
-//     },
-//     {
-//         id:2,
-//         images : ['../image/cart2.webp'],
-//         name : 'Brake Disc',
-//         quantity : 1,
-//         price : 5999,
-//     },
-//     {
-//         id:3,
-//         images : ['../image/cart3.webp'],
-//         name : 'Oil Filter',
-//         quantity : 1,
-//         price : 549,
-//     },
-
-
-// ]
-
-
+ 
  products = JSON.parse(localStorage.getItem('cart-products'))||[];
 async function fetchdata() {
     try {
@@ -101,7 +75,7 @@ function display(products) {
         btn.textContent = '| REMOVE';
         btn.id = "removeBtn";
 
-        img.src = element.images[0];
+        img.src = element.images;
         img.style.width = '100px';
 
         name.textContent = element.name;
@@ -173,6 +147,7 @@ otherinfo.setAttribute("class","otherinfo");
 
         var Subtotal =document.getElementById("price-cost");
         Subtotal.textContent= `Subtotal (${products.length} items) :₹ ${total(products)}`
+        let cartproduct = JSON.stringify(localStorage.setItem("cartnumber",products.length));
 
         
 
@@ -252,7 +227,7 @@ var proceed =document.getElementById("Proceed")
 proceed.addEventListener("click",()=>{
 
     const paymentprice =localStorage.setItem("paymentprice",total(products));
-    window.location.href='../address.html'
+    window.location.href='./address.html'
 
 });
 
