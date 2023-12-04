@@ -689,27 +689,15 @@
     </script>
     <script>
         
-let loggedIn = false;
+        let loggedIn = false;
 
 function handleLogout() {
     loggedIn = false;
     showLoginUI();
 }
 
-//addedlater
-let userName=JSON.parse(localStorage.getItem("userName"))||null;
-
-if(userName!==null){
-    showAdminUI(userName);
-}else{
-    showLoginUI();
-}
-
-
-
-//=========================================================================
 function showAdminUI(username) {
-    document.getElementById("username_text").innerText = `${username}`;
+    document.getElementById("username_text").innerText = `Welcome, ${username} (Admin)`;
     document.getElementById("login_text").style.display = "none";
     document.getElementById("username_text").style.display = "inline";
     document.getElementById("logout_text").style.display = "inline";
@@ -721,37 +709,35 @@ function showLoginUI() {
     document.getElementById("username_text").style.display = "none";
     document.getElementById("logout_text").style.display = "none";
 }
-//==========================================================================
+
+function windowlocation(){
+    window.location.href = "../productpage/product.html"
+}
+
 // Check if the user is already logged in (you can use any criteria here)
-// if (loggedIn) {
-//     // const username = "AdminUser"; // Replace with the actual username
-//     const username=userName;
-//     showAdminUI(username);
-// } else {
-//     showLoginUI();
-// }
+if (loggedIn) {
+    const username = "AdminUser"; // Replace with the actual username
+    showAdminUI(username);
+} else {
+    showLoginUI();
+}
 
 // Login event (simulated login)
-//added later
-// let userName=localStorage.getItem("userName");
-
-//previous one
-// document.getElementById("login_text").addEventListener("click", function (e) {
-//     e.preventDefault();
-//     // const username = "AdminUser"; 
-//     const username=userName;
-//     loggedIn = true;
-//     showAdminUI(username);
-// });
-
+document.getElementById("login_text").addEventListener("click", function (e) {
+    e.preventDefault();
+    const username = "AdminUser"; 
+    loggedIn = true;
+    showAdminUI(username);
+});
 
 
 document.getElementById("logout_text").addEventListener("click", handleLogout);
-
 let hom_1Img = document.getElementById("img_1")
 hom_1Img.addEventListener("click" , function(){
-    window.location.href = "../Productpage/product.html"
+    window.location.href = "../productpage/product.html"
 })
+
+
     </script>
 
 </html>
