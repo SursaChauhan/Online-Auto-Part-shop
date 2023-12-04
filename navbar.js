@@ -28,7 +28,7 @@ function navbar(){
             </div>
         </div>
         <div id="nav_child_3">
-            <a href="./Products/product.html">Exterior</a>
+            <a href="../Products/product.html">Exterior</a>
             <a href="../Products/product.html">Interior</a>
             <a href="../Products/product.html">Performance</a>
             <a href="../Products/product.html">Wheels and Tires</a>
