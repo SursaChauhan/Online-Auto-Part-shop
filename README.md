@@ -6,7 +6,7 @@ This is unit 5 final project. we are devolping a automotive parts sell and servi
 **festive-lake-9492**
 
 # Deployed Link:-
-https://app.netlify.com/sites/delicate-eclair-7306e2/deploys/656ece3a7830fc00a35560fa
+https://656ece3a7830fc00a35560fa--delicate-eclair-7306e2.netlify.app
 
 # Team members:-
 Surendra:- <br/>
